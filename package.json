@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "engines": {
+    "npm": "6.x"
+  },
   "scripts": {
+    "build": "webpack",
     "client-install": "npm install --prefix client",
     "start": "node server.js",
     "server": "nodemon server.js --exec babel-node --presets babel-preset-env",
